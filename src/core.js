@@ -15,7 +15,7 @@ const RESPONSE_HEADER_ALLOWLIST = [
   'x-hwid-limit',
 ];
 
-const HWID_PATTERN = /^[A-Za-z0-9=-]{10,64}$/;
+const HWID_PATTERN = /^[A-Za-z0-9=:_.-]{1,128}$/;
 
 const err = (message, status = 400) => Object.assign(new Error(message), { status });
 
